@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DrivenEats</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div><!--Início da página-->
+    
+    <header>
+      <h1 class="name">DrivenEats</h1>
+      <h2 class="slogan">Sua comida em 6 minutinhos</h2>
+    </header>
+    
+
+    
+    <section class="menu">      
+        <nav> <!-- Prato-->
+          <h1>Primeiro, seu prato</h1>
+          <div class="menu-driven">
+            <!-- 1 -->
+            <div onclick="selectorFood(this)" class="options">
+              <img src="./img/frango.jpg">
+              <p class="solicitation">Coxinhas de frango</p>
+              <p class="coment">Bem macias (500G)</p>
+              <p class="price">R$ 16,90</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!-- 2 -->
+            <div onclick="selectorFood(this)" class="options">
+              <img src="./img/frango.jpg">
+              <p class="solicitation">Coxinhas de frango</p>
+              <p class="coment">Bem macias(1KG)</p>
+              <p class="price">R$ 26,90</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!-- 3 -->
+            <div onclick="selectorFood(this)" class="options">
+              <img src="./img/frango.jpg">
+              <p class="solicitation">Coxinhas de frango</p>
+              <p class="coment">Bem macias (2KG)</p>
+              <p class="price">R$ 36,90</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!-- 4-->
+            <div onclick="selectorFood(this)" class="options">
+              <img src="./img/frango.jpg">
+              <p class="solicitation">Coxinhas de frango</p>
+              <p class="coment">Bem macias(4KG)</p>
+              <p class="price">R$ 46,90</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+          </div>
+        </nav>      <!-- Prato-->
+
+      
+        <nav> <!-- Bebida-->
+          <h1>Agora, sua bebida</h1>
+          <div class="menu-driven">
+            <!-- 1 -->
+            <div onclick="selectDrink(this)" class="options">
+              <img src="./img/coca-cola.jpg">
+              <p class="solicitation">Coquinha gelada</p>
+              <p class="coment">Lata 350ml</p>
+              <p class="price">R$ 6,99</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!-- 2 -->
+            <div onclick="selectDrink(this)" class="options">
+              <img src="./img/coca-cola.jpg">
+              <p class="solicitation">Coquinha gelada</p>
+              <p class="coment">Garrafa 600ml</p>
+              <p class="price">R$ 9,99</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!--3-->
+            <div onclick="selectDrink(this)" class="options">
+              <img src="./img/coca-cola.jpg">
+              <p class="solicitation">Coquinha gelada</p>
+              <p class="coment">Garrafa 1l</p>
+              <p class="price">R$ 16,99</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+            <!--4 -->
+            <div onclick="selectDrink(this)" class="options">
+              <img src="./img/coca-cola.jpg">
+              <p class="solicitation">Coquinha gelada</p>
+              <p class="coment">Garafa 5l</p>
+              <p class="price">R$ 26,99</p>
+              <ion-icon name="check"></ion-icon>
+            </div>
+          </div>
+        </nav>
+
+       <nav> <!--inicio sobremesas-->
+         <h1>Por fim, sua sobremesa</h1>
+         <div class="menu-driven">
+          <!-- 1 -->
+          <div onclick="selectDessert(this)" class="options">
+            <img src="./img/torta-holandesa.jpg">
+            <p class="solicitation">Torta Holandesa</p>
+            <p class="coment">Uma delicia pedaço</p>
+            <p class="price">R$ 14,99</p>
+            <ion-icon name="check"></ion-icon>
+          </div>
+          <!-- 2 -->
+          <div onclick="selectDessert(this)" class="options">
+            <img src="./img/torta-holandesa.jpg">
+            <p class="solicitation">Torta Holandesa</p>
+            <p class="coment">Uma delicia pote</p>
+            <p class="price">R$ 24,99</p>
+            <ion-icon name="check"></ion-icon>
+          </div>
+          <!-- 3 -->
+          <div onclick="selectDessert(this)" class="options">
+            <img src="./img/torta-holandesa.jpg">
+            <p class="solicitation">Torta Holandesa</p>
+            <p class="coment">Uma delicia inteira</p>
+            <p class="price">R$ 44,99</p>
+            <ion-icon name="check"></ion-icon>
+          </div>
+          <!-- 4 -->
+          <div onclick="selectDessert(this)" class="options">
+            <img src="./img/torta-holandesa.jpg">
+            <p class="solicitation">Torta Holandesa</p>
+            <p class="coment">Uma delicia a kg</p>
+            <p class="price">R$ 94,99</p>
+            <ion-icon name="check"></ion-icon>
+          </div>
+        </nav> <!--fim sobremesas-->
+      </div>
+      <!-- fim tipo de alimento -->
+
+    </section>
+  
+
+
+    <!-- inicio barra inferior-->
+    <fotter>
+      <button onclick="whatsapp()" class="bottom-button">
+        <p>Selecione os 3 itens para fechar o pedido</P>
+      </button>
+    </fotter>
+   
+  </div> <!--fim da página-->
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
