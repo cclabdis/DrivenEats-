@@ -31,7 +31,7 @@ function selectDrink(selector) {
 function selectDessert(selector) {
     const lastSelect = document.querySelector(".dessert-select");
 
-    if (lastSelect !== null) { /
+    if (lastSelect !== null) {
         lastSelect.classList.remove("dessert-select"); 
     }
     selector.classList.add("dessert-select");
