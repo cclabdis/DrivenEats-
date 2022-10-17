@@ -31,10 +31,9 @@ function selectDrink(selector) {
 function selectDessert(selector) {
     const lastSelect = document.querySelector(".dessert-select");
 
-    if (lastSelect !== null) { // verificação se já tinha algo selecionado
-        lastSelect.classList.remove("dessert-select"); // desmarca algo selecionado anteriormente
+    if (lastSelect !== null) { /
+        lastSelect.classList.remove("dessert-select"); 
     }
-
     selector.classList.add("dessert-select");
     dessert = selector.innerHTML;
 
@@ -54,30 +53,31 @@ function enableButton() {
         }
     }
 
+
 }
 function whatsapp() {
-    const food = (document.querySelector(".food-select>.solicitation").innerHTML); // armazena o nome do prato
-    const drink = (document.querySelector(".drink-select>.solicitation").innerHTML); // armazena o nome da bebida
-    const dessert = (document.querySelector(".dessert-select>.solicitation").innerHTML); // armazena o nome da sobremesa
-    let price = 0; // "price" irá armazenar a soma dos valores que x receber.
-    let x = (document.querySelector(".food-select>.price").innerHTML).replace("R$ ", ""); // x receberá o valor de cada parte da refeição
+    const food = (document.querySelector(".food-select>.solicitation").innerHTML); 
+    const drink = (document.querySelector(".drink-select>.solicitation").innerHTML); 
+    const dessert = (document.querySelector(".dessert-select>.solicitation").innerHTML); 
+    let price = 0; 
+    let x = (document.querySelector(".food-select>.price").innerHTML).replace("R$ ", ""); 
 
     const nome = prompt("Qual é seu nome?");
     const adress = prompt("Qual é seu endereço?");
-    // Cálculo do preço total
+    
     x = x.replace(",", ".");
     x = Number(x);
     price += x;    
-    x = (document.querySelector(".drink-select>.price").innerHTML).replace("R$ ", ""); // preço bebida
+    x = (document.querySelector(".drink-select>.price").innerHTML).replace("R$ ", ""); 
     x = x.replace(",", ".");
     x = Number(x);
     price += x;    
-    x = (document.querySelector(".dessert-select>.price").innerHTML).replace("R$ ", ""); // preço sobremesa
+    x = (document.querySelector(".dessert-select>.price").innerHTML).replace("R$ ", ""); 
     x = x.replace(",", ".");
     x = Number(x);
     price += x;    
 
-    price = String(price.toFixed(2).replace(".", ",")); // price é convertido para uma string com "," e duas casas decimais
+    price = String(price.toFixed(2).replace(".", ",")); 
     
     let str = `Olá, gostaria de fazer o pedido:\n- Prato: ${food}\n- Bebida: ${drink}\n- Sobremesa: ${dessert}\nTotal: R$ ${price}\n\n Nome: ${nome}\n Endereço: ${adress} `;
     str = encodeURIComponent(str);
